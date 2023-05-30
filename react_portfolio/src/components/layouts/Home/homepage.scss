@@ -1,0 +1,121 @@
+@import "../../../assets/styles/variable";
+
+.intro-section {
+    display: flex;
+    padding: 50px 90px;
+    flex-direction: row-reverse;
+
+    .intro-in {
+        width: 60%;
+        padding: 10px 40px 10px 35px;
+
+        .intro-greet {
+            small {
+                color: $theme;
+                font-weight: 500;
+                font-size: 20px;
+            }
+        }
+
+        .my-name,
+        .role {
+            h2 {
+                font-size: 80px;
+                font-family: system-ui;
+            }
+        }
+
+        .brief-intro {
+            padding-top: 25px;
+            font-size: 20px;
+        }
+
+        .dwnld-cv {
+            text-align: left;
+            margin-top: 60px;
+
+            button {
+                outline: none;
+                background-color: $bg;
+                padding: 10px 30px;
+                border: 1px solid $theme;
+                border-radius: 6px;
+                color: $theme;
+                font-weight: 400;
+                font-family: "Roboto mono";
+            }
+
+            button:hover {
+                color: $action;
+                border-color: $action;
+            }
+        }
+    }
+
+    .intro-img {
+        width: 40%;
+        background-image: url(../../../assets/images/about-banner.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:480px) {
+
+    .intro-section {
+        padding: 40px 0 90px !important;
+        display: block;
+
+        .intro-img {
+            display: none;
+        }
+
+        .intro-in {
+            padding: 0 !important;
+            width: 100%;
+
+            .intro-greet {
+                margin-bottom: 20px;
+
+                small {
+
+                    font-size: 18px;
+                }
+            }
+
+            .my-name,
+            .role {
+                h2 {
+                    font-weight: 600;
+                    font-family: sans-serif;
+                    letter-spacing: 2px;
+                    word-spacing: 5px;
+                }
+            }
+
+            .my-name h2 {
+                font-size: 30px;
+                color: $heading;
+                font-size: 34px !important;
+            }
+
+            .role {
+                margin-top: 10px;
+
+                h2 {
+                    color: $text;
+                    font-size: 32px !important;
+                }
+            }
+
+            .dwnld-cv {
+                margin-top: 50px;
+            }
+
+            .brief-intro {
+                padding: 20px 0 10px;
+            }
+        }
+    }
+}

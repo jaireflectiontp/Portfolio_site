@@ -1,0 +1,39 @@
+@import "./variable";
+
+.section-heading {
+    margin: 5px 0 35px;
+    h2 {
+        display: flex;
+        align-items: center;
+        font-size: 34px;
+        font-weight: 600;
+        white-space: nowrap;  
+        .heading-wrapper {
+            .heading-number {
+                color: $theme;
+                padding-right: 10px;
+            }
+
+            .heading-text {
+                color: $heading;
+            }
+        }
+        &::after{
+            content: "";
+            display: block;
+            width: 300px;
+            height: 1px;
+            margin-left: 10px;
+            position: relative;
+            top: 5px;
+            background-color: #8892b07d;
+        } 
+    }
+
+}
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    h2{
+        font-size: 22px !important;
+    }
+}

@@ -1,0 +1,24 @@
+@import "../../../assets/styles/variable";
+
+.logoContainer {
+    padding-right: 60px;
+}
+.navbar-toggler {
+    background-color: #5a2e98;
+}
+.nav-item {
+    padding-right: 45px;
+    .nav-link{
+        color: $text;
+        font-family: "Roboto Mono", monospace;
+        .nav-item-count {
+            color: $theme;
+            padding-right: 10px;
+        }
+        .nav-item-text:hover {
+            color: $theme;
+        }
+    }
+}
+
+
