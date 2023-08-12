@@ -17,12 +17,8 @@ const Contact = () => {
         <div className="contact-container">
           <div className="contact-details">
             <div className="map-wrap">
-              <MapContainer center={[21.408580, 78.986015]} zoom={13}>
-                <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                <Marker position={[21.408580, 78.986015]}>
-                  <Popup>Hey, This is where i live</Popup>
-                </Marker>
-              </MapContainer>
+              <iframe style={{ width: '100%', height: '100%' }} src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d510832.1010589424!2d78.94499084544778!3d21.473206280510286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDI0JzMwLjgiTiA3OMKwNTknMDkuNyJF!5e0!3m2!1sen!2sin!4v1691834997510!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
             </div>
             <div className="map-info">
               Jay Rautel
